@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d6efd; /* BLUE BACKGROUND */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Counter number */
+#counter {
+  font-size: 80px;       /* BIG FONT */
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Buttons */
+button {
+  width: 100px;
+  padding: 12px 0;
+  font-size: 26px;       /* BIG BUTTON TEXT */
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* + button */
+#increment {
+  background-color: #198754; /* green */
+  color: white;
+}
+
+/* - button */
+#decrement {
+  background-color: #ffc107; /* yellow */
+  color: black;
+}
+
+/* reset button */
+#reset {
+  background-color: #dc3545; /* red */
+  color: white;
+  margin-top: 15px;
+}
+
+/* Hover effect */
+button:hover {
+  opacity: 0.9;
+}
