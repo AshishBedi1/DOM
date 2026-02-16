@@ -17,6 +17,29 @@
 //   });
 
 
+// let test = new Promise((resolve, reject) => { 
+//     const success = false;
+
+//     if(success){
+//         resolve("Promise resolved successfully!");
+//     }
+//     else{
+//         reject("Promise rejected!");
+//     }
+// });
+
+// async function handlePromise() {
+//     try {
+//         const msg = await test; 
+//         console.log(msg);
+//     } catch (err) {
+//         console.log(err);
+//     }
+// }
+
+// handlePromise();
+
+
 
 console.log("Script is running 1...");
 console.log("Script is running 2...");
@@ -32,7 +55,7 @@ console.log("Script is running 5...");
 
 //promises
 
-let promise = new Promise((resolve, reject) => {
+let shiwali = new Promise((resolve, reject) => {
         const success = false;
         if(success){
             resolve("Promise resolved successfully!");
@@ -42,9 +65,22 @@ let promise = new Promise((resolve, reject) => {
         }
 })
 
-promise.then((msg) => {
-    console.log(msg);
-})
-.catch((err) => {
-    console.log(err);
-})
+// promise.then((msg) => {
+//     console.log(msg);
+// })
+// .catch((err) => {
+//     console.log(err);
+// })
+
+
+//aysnc await
+
+async function handlePromise(){
+    try{
+        const msg = await shiwali; 
+        console.log(msg);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
